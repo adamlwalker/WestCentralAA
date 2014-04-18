@@ -1,32 +1,33 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-    <title>Left Side Menu App template</title>
-<!--
+    <title>Left Side Menu App template</title><!--
     This template can be used for simple app with left side menu that can be opened to switch views, for applications like Youtube App or Gmail app.
--->  
-    
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
-    
-    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
-    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
-    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
-    <!--AppFramework plugin for sliding side menu-->
-    <script type="text/javascript" charset="utf-8" src="appframework/plugins/af.slidemenu.js"></script>
+-->
+    <meta content=
+    "initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;"
+    name="viewport">
+    <link href="appframework/af.ui.css" rel="stylesheet" type="text/css">
+    <link href="appframework/icons.css" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="appframework/appframework.ui.min.js" type=
+    "text/javascript"></script><!--AppFramework plugin for sliding side menu-->
 
-<!-- Required if packaging to native app using Intel XDK -->    
+    <script charset="utf-8" src="appframework/plugins/af.slidemenu.js" type=
+    "text/javascript"></script><!-- Required if packaging to native app using Intel XDK -->
     <script src="intelxdk.js"></script>
     <script src="xhr.js"></script>
-    <script>    
+    <script>
+
         function onDeviceReady(){ 
             $.ui.launch();
             intel.xdk.device.hideSplashScreen();
         }
         document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
-    </script>
-<!-- end Intel XDK code -->
-    
-    <script>   
+    </script><!-- end Intel XDK code -->
+
+    <script>
+
         $.ui.autoLaunch = false;
         $.ui.animateHeaders = false;
                 
@@ -36,136 +37,2049 @@
         });
     </script>
 </head>
-<body> 
-<div id="afui">
-    
-    <!--Left Side Menu Navigation bar -->
-    <nav>
-        <ul class="list">
-            <li><a href="#page1" class="icon home">Home</a></li>
-            <li><a href="#sunday">Sunday</a></li>
-            <li><a href="#monday">Monday</a></li>
-            <li><a href="#tuesday">Tuesday</a></li>
-            <li><a href="#wednesday">Wednesday</a></li>
-            <li><a href="#thursday">Thursday</a></li>
-            <li><a href="#friday">Friday</a></li>
-            <li><a href="#saturday">Saturday</a></li>
-        </ul>
-    </nav>
-    
-    <div id="content" style=""> 
-        
-    <!--Main View Pages-->
-        <div class="panel" title="Home" id="page1" data-footer="none" selected="true">
-            <header>
-                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Home</h1>
-            </header>
-            <p><strong>God grant me the serenity<br />
-            to accept the things I cannot change;<br /> 
-            courage to change the things I can;<br /> 
-            and wisdom to know the difference.</strong></p>
-            <br />
-<pre>C	Closed (Alcoholics Only)	 	
-M 	Men
-O	Open	 	
-P	Promises
-ABSI	As Bill Sees It	 	
-S	Speaker
-BB	Big Book	 	
-SPT	Speaker Topic
-BBD	Big Book Discussion	 	
-ST	Step
-BG	Beginners	 	
-T	Topic
-BK	Varied Book Study	 	
-TRD	Tradition
-CTB	Came To Believe	 	
-W	Women
-D	Discussion	 	
-Y	Child Care
-G	Gay	 	
-11ST	Eleventh Step
-GV	Grapevine	 	
-*	Alanon same location
-H	Handicapped	 	
-**	Ala-teen same location	
-LS	Living Sober	 	
-°	Hearing Impaired
+
+<body>
+    <div id="afui">
+        <!--Left Side Menu Navigation bar -->
+
+        <nav>
+            <ul class="list">
+                <li><a class="icon home" href="#page1">Home</a></li>
+
+                <li><a href="#sunday">Sunday</a></li>
+
+                <li><a href="#monday">Monday</a></li>
+
+                <li><a href="#tuesday">Tuesday</a></li>
+
+                <li><a href="#wednesday">Wednesday</a></li>
+
+                <li><a href="#thursday">Thursday</a></li>
+
+                <li><a href="#friday">Friday</a></li>
+
+                <li><a href="#saturday">Saturday</a></li>
+
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+
+        <div id="content" style="">
+            <!--Main View Pages-->
+
+            <div class="panel" data-footer="none" id="page1" title="Home">
+                <header>
+                    <a class='menuButton' id="menubadge" onclick=
+                    '$.ui.toggleSideMenu()' style="float:left !important"></a>
+
+                    <h1>Home</h1>
+                </header>
+
+                <p><a class="button" href="tel:13016620544">Need Help? Call the
+                Hotline</a></p>
+
+                <p>This meeting directory covers all of Frederick, and portions
+                of Carroll and Montgomery Counties.</p><br>
+                <pre>
+C    Closed (Alcoholics Only)      
+M   Men
+O   Open        
+P   Promises
+ABSI    As Bill Sees It     
+S   Speaker
+BB  Big Book        
+SPT Speaker Topic
+BBD Big Book Discussion     
+ST  Step
+BG  Beginners       
+T   Topic
+BK  Varied Book Study       
+TRD Tradition
+CTB Came To Believe     
+W   Women
+D   Discussion      
+Y   Child Care
+G   Gay     
+11ST    Eleventh Step
+GV  Grapevine       
+*   Alanon same location
+H   Handicapped     
+**  Ala-teen same location  
+LS  Living Sober        
+°   Hearing Impaired
 </pre>
-            
-        </div>
-    
-        
-        <div class="panel" title="Sunday" id="sunday" data-footer="none">
-            <header>
-                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Sunday</h1>
-            </header>
-            
-<!-- Sunday Data -->
+            </div>
 
-<div class="formGroupHead">Barnesville</div><ul class="list"><li class="divider">7:30PM</li><li><strong>Barnesville</strong><br/>(C)(D)<br/><a href="http://maps.google.com/maps?hl=&q=17917+Barnesville+Road%2C+Barnesville%2C+MD%E2%80%8E&sourceid=navclient-ff&rlz=1B3GGLL_enUS381&ie=UTF-8" target="_blank">Barnesville Baptist Ch. - 17917 Barnesville Rd.</a></li></ul><br/><br/><div class="formGroupHead">Adamstown</div><ul class="list"><li class="divider">7:30PM</li><li><strong>Bottomless</strong><br/>(C)(BB)(d40)<br/><a href="http://maps.google.com/maps?hl=&q=5603+Mountville+Road%2C+Adamstown%2C+MD&sourceid=navclient-ff&rlz=1B3GGLL_enUS381&ie=UTF-8" target="_blank">Adamstown Community Ch. - 5603 Mountville Rd.</a></li></ul><br/><br/><div class="formGroupHead">Mt. Airy</div><ul class="list"><li class="divider">7:00PM</li><li><strong>By The Book</strong><br/>(O)(BB)(H)(d41)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=1307+N.+Main+St.%2c+mt.+airy%2c+md" target="_blank">St. James Episcopal Ch. - 1307 N. Main St.</a></li></ul><br/><br/><div class="formGroupHead">Frederick</div><ul class="list"><li class="divider">10:00AM</li><li><strong>Happy Hour Spirituality</strong><br/>(O)(D)(d41)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md" target="_blank">The Club, Inc. - 400 A East Church St.</a></li><li class="divider">2:00PM</li><li><strong>FMH BYOC</strong><br/>(O)(D)(d40)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=400+West+7th+Street%2c+Frederick%2c+MD%e2%80%8e" target="_blank">Frederick Memorial Hospital - 400 West 7th St.</a></li><li class="divider">5:00PM</li><li><strong>Commuter Group</strong><br/>(O)(D)(d40)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md" target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd St.</a></li><li class="divider">6:00PM</li><li><strong>The Next Episode</strong><br/>(O)(GV)(d41)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md" target="_blank">The Club, Inc. - 400 A East Church St.</a></li><li class="divider">8:00PM</li><li><strong>Downtown Step Group</strong><br/>(O)(D)(ST)(*)(d40)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=116+East+2nd+St.%2c+Frederick%2c+MD%e2%80%8e" target="_blank">St. John's Catholic Ch. - 116 East 2nd St.</a></li><li class="divider">8:00PM</li><li><strong>Young, Dumb & Full of AA</strong><br/>(O)(ST)(Y)(d41)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md" target="_blank">The Club, Inc. - 400 A East Church St.</a></li></ul><br/><br/><div class="formGroupHead">Boyds</div><ul class="list"><li class="divider">9:30AM</li><li><strong>Fireside</strong><br/>(C)(H)(ST 3,11)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=19510+White+Ground+Road%2c+boyds%2c+md" target="_blank">The Old Negro School - 19510 White Ground Rd.</a></li></ul><br/><br/><div class="formGroupHead">Germantown</div><ul class="list"><li class="divider">8:00AM</li><li><strong>Germantown Yacht Club</strong><br/>(C)(ABSI)(H)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=18301+Waring+Station+Road+Germantown%2c+MD+20874-2514" target="_blank">Izaak Walton League - 18301 Waring Station Rd.</a></li><li class="divider">8:30PM</li><li><strong>How It Works</strong><br/>(O)(D)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=13421+Clopper+Road%2c+germantown%2c+md" target="_blank">United Ch. of Christ - 13421 Clopper Road</a></li></ul><br/><br/><div class="formGroupHead">Braddock Heights</div><ul class="list"><li class="divider">7:00PM</li><li><strong>Primary Purpose</strong><br/>(O)(ST)(d40)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=6909+Maryland+Avenue%2c+Frederick%2c+MD%e2%80%8e" target="_blank">Ch. of the Transfiguration - 6909 Maryland Ave.</a></li></ul><br/><br/><div class="formGroupHead">Winfield</div><ul class="list"><li class="divider">7:00PM</li><li><strong>South Carroll Sunday Night</strong><br/>(O)(BB)(D)(d9)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=0h&oq=&rlz=1T4GGLL_enUS347US348&q=2015+Old+Liberty+Road+West%2c+Westminster%2c+MD%e2%80%8e" target="_blank">Christ Care Ch. - 2015 Old Liberty Rd. West</a></li></ul><br/><br/><div class="formGroupHead">Thurmont</div><ul class="list"><li class="divider">10:00AM</li><li><strong>Sunday Morning Special</strong><br/>(C)(ST)(d43)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=15601+US+15+North%2c+thurmont%2c+maryland" target="_blank">7th Day Adventist Ch. - 15601 US 15 North</a></li></ul><br/><br/><div class="formGroupHead">Sykesville</div><ul class="list"><li class="divider">10:00AM</li><li><strong>Sykesville Sunday Morning</strong><br/>(O)(D)(d9)<br/>Springfield Hospital - Big "G" Building on 4th Street</li></ul><br/><br/><div class="formGroupHead">Damascus</div><ul class="list"><li class="divider">8:30PM</li><li><strong>Uptown-Downtown</strong><br/>(O)(ST)(d41)<br/><a href="https://maps.google.com/maps?q=9600+Main+St,+Damascus,+MD+20872&hl=en&sll=39.359983,-77.30908&sspn=0.549479,0.407867&hnear=9600+Main+St,+Damascus,+Maryland+20872&t=m&z=17" target="_blank">Damascus UMC Youth Chapel - 9600 Main St</a></li></ul><br/><br/>
+            <div class="panel" data-footer="none" id="sunday" title="Sunday">
+                <header>
+                    <a class='menuButton' id="menubadge" onclick=
+                    '$.ui.toggleSideMenu()' style="float:left !important"></a>
 
-<!-- End Sunday Data -->
-            
-        </div>
-        
-        <div class="panel" title="Monday" id="monday" data-footer="none">
-            <header>
-                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Monday</h1>
-            </header>
-            <!-- Monday Data -->
- 
+                    <h1>Sunday</h1>
+                </header><!-- Sunday Data -->
 
-<div class="formGroupHead">Point Of Rocks</div><ul class="list"><li class="divider">8:30PM</li><li><strong>Blue Light Special</strong><br/>(O)(D)(d40)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=1519+Ballenger+Creek+Pike%2c+Point+of+Rocks%2c+MD%e2%80%8e" target="_blank">St. Lukes Lutheran Ch. - 1519 Ballenger Creek Pike</a></li></ul><br/><br/><div class="formGroupHead">Brunswick</div><ul class="list"><li class="divider">8:00PM</li><li><strong>Brunswick Group</strong><br/>(C)(BB)(d40)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=7+South+Maryland+Avenue%2c+Brunswick%2c+MD%e2%80%8e+" target="_blank">New Hope United Methodist Ch. - 7 South Maryland Ave.</a></li></ul><br/><br/><div class="formGroupHead">Cedar Grove</div><ul class="list"><li class="divider">8:30PM</li><li><strong>Cedar Grove Group</strong><br/>(C)(D)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=23401+Davis+Mill+Road" target="_blank">Upper Seneca Baptist Ch. - 23401 Davis Mill Rd.</a></li></ul><br/><br/><div class="formGroupHead">Frederick</div><ul class="list"><li class="divider">10:00AM</li><li><strong>Monday Morning Meeting</strong><br/>(C)(ST)(d41)<br/><a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=511+W+South+St,+Frederick,+MD&aq=0&oq=511+w+south+st+fr&sll=39.377834,-77.003174&sspn=0.720769,1.454315&vpsrc=0&ie=UTF8&hq=&hnear=511+W+South+St,+Frederick,+Maryland+21701&t=m&z=16&iwloc=A&ved=0CA8QpQY&sa=X&ei=w4KVUO-6Nc6OxQGNoYHgBA" target="_blank">511 W South St.</a></li><li class="divider">10:00AM</li><li><strong>Mid-Morning Group of A.A.</strong><br/>(C)(ST)(d41)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md" target="_blank">The Club, Inc. - 400 A East Church St.</a></li><li class="divider">12:00 N</li><li><strong>High Noon Group</strong><br/>(C)(D)(H)(d40)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md" target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd St.</a></li><li class="divider">5:15PM</li><li><strong>Commuter Group</strong><br/>(C)(BB)(d40)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md" target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd St.</a></li><li class="divider">5:30PM</li><li><strong>Happy Hour</strong><br/>(O)(GV)(d41)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md" target="_blank">The Club, Inc. - 400 A East Church St.</a></li><li class="divider">6:30PM</li><li><strong>Living the Dream</strong><br/>(O)(ST 1,2,3)(d41)<br/><a href="https://maps.google.com/maps?q=Trinity+Chapel+of+the+Evangelical+Reformed+Church,+Frederick,+MD&hl=en&sll=39.371215,-77.217751&sspn=0.012341,0.026157&oq=Trinity+Cha&gl=US&hq=Trinity+Chapel+of+the+Evangelical+Reformed+Church,&hnear=Frederick,+Maryland&t=m&z=16" target="_blank">Trinity Chapel - 10 W Church St.</a></li><li class="divider">6:45AM</li><li><strong>Early Bird Group</strong><br/>(C)(ST)(H)(d40)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md" target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd St.</a></li><li class="divider">7:00PM</li><li><strong>Monday Night Crossroads Gr</strong><br/>(C)(BG)(H)(S)(d41)<br/><a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=511+W+South+St,+Frederick,+MD&aq=0&oq=511+w+south+st+fr&sll=39.377834,-77.003174&sspn=0.720769,1.454315&vpsrc=0&ie=UTF8&hq=&hnear=511+W+South+St,+Frederick,+Maryland+21701&t=m&z=16&iwloc=A&ved=0CA8QpQY&sa=X&ei=w4KVUO-6Nc6OxQGNoYHgBA" target="_blank">511 W South St.</a></li><li class="divider">7:30PM</li><li><strong>There Is a Solution</strong><br/>(C)(BB)(M)(H)(d40)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md" target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd St.</a></li><li class="divider">8:00PM</li><li><strong>Rosemont Speakers Group</strong><br/>(O)(S)(H)(d40)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=2100+Rosemont+Ave.%2c+frederick%2c+md" target="_blank">Grace Community Ch. - 2100 Rosemont Ave.</a></li><li class="divider">8:00PM</li><li><strong>Frederick Sober Women's Gr</strong><br/>(C)(D)(W)(d40)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=131+W.+2nd.+St.%2c+frederick%2c+md" target="_blank">Calvary United Methodist - 131 West 2nd. St. (Education Bldg. - Rear, downstairs)</a></li><li class="divider">8:30PM</li><li><strong>Monday Night Open Discussi</strong><br/>(O)(D)(d41)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md" target="_blank">The Club, Inc. - 400 A East Church St.</a></li></ul><br/><br/><div class="formGroupHead">Eldersburg</div><ul class="list"><li class="divider">12:00 N</li><li><strong>Eldersburg Group</strong><br/>(O)(D)(d9)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=12801+Darnestown+Road%2c+Gaithersburg%2c+MD%e2%80%8e" target="_blank">St. Joseph Catholic Community Ch. - 915 Liberty Rd.</a></li></ul><br/><br/><div class="formGroupHead">Damascus</div><ul class="list"><li class="divider">7:00PM</li><li><strong>Serenity at Seven</strong><br/>(O)(ST)(d41)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=11210+Bethesda+Church+Rd.%2c+Damascus%2c+Md" target="_blank">Difference Makers Ch. - 11210 Bethesda Church Rd.</a></li><li class="divider">8:30PM</li><li><strong>Fifth Chapter Group</strong><br/>(C)(ST)(H)(d41)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=27015+Ridge+Road%2c+Damascus%2c+MD%e2%80%8e+" target="_blank">Redeemer Lutheran Ch. - 27015 Ridge Rd.</a></li></ul><br/><br/><div class="formGroupHead">Emmitsburg</div><ul class="list"><li class="divider">7:00 PM</li><li><strong>Grotto Meeting</strong><br/>(O)(ST)(d40)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=16150+Saint+Anthony+Road%2c+Emmitsburg%2c+MD%e2%80%8e" target="_blank">St Anthony's Shrine Parish (Parish House), 16150 St. Anthony Rd.</a></li></ul><br/><br/><div class="formGroupHead">Myersville</div><ul class="list"><li class="divider">7:00PM</li><li><strong>Keep It Simple</strong><br/>(C)(ST) (Last Mond<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=603+Main+Street%2c+Myersville%2c+MD%e2%80%8e" target="_blank">Zion Methodist Ch. - 603 Main St.</a></li></ul><br/><br/><div class="formGroupHead">Mt. Airy</div><ul class="list"><li class="divider">7:00PM</li><li><strong>Sober Friends</strong><br/>(O)(ST)(d41)<br/><a href="https://maps.google.com/maps?q=Damascus+Road+Community+Church&hl=en&ll=39.371215,-77.217751&spn=0.012341,0.026157&cid=4837219263630904350&gl=US&hq=Damascus+Road+Community+Church&t=m&z=16&iwloc=A" target="_blank">Damascus Road Community Ch. - 12826 Old National Pike</a></li><li class="divider">7:00PM</li><li><strong>Let Go-Let God</strong><br/>(O)(D)(H)(d41)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=1125+Saint+Michaels+Road%2c+Mt+Airy%2c+MD%e2%80%8e" target="_blank">St. Michael's Ch. - 1125 Saint Michaels Rd.</a></li></ul><br/><br/><div class="formGroupHead">Westminster</div><ul class="list"><li class="divider">12:00 N</li><li><strong>Monday Noon Group</strong><br/>(O)(D)(d9)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=23+North+Court+Street%2c+Westminster%2c+MD%e2%80%8e" target="_blank">Ascension Episcopal  Ch. - 23 North Court St.</a></li><li class="divider">8:30PM</li><li><strong>Westminster Monday Night S</strong><br/>(C)(ST)(H)(d9)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=21+Carroll+St.%2c+Westminster%2c+MD%e2%80%8e" target="_blank">Grace Evangelical Lutheran Ch. - 21 Carroll St.</a></li></ul><br/><br/><div class="formGroupHead">New Windsor</div><ul class="list"><li class="divider">8:00PM</li><li><strong>New Windsor Monday Night</strong><br/>(C)(BB(D)(d9)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=2h&oq=new windsor presbyterian church&rlz=1T4GGLL_enUS347US348&q=high+and+church+st.%2c+new+windsor%2c+md" target="_blank">New Windsor Presbyterian Ch. - High and Church St.</a></li></ul><br/><br/><div class="formGroupHead">Darnestown</div><ul class="list"><li class="divider">8:30PM</li><li><strong>Quince Orchard Step</strong><br/>(C)(ST)(D)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=12801+Darnestown+Road%2c+Gaithersburg%2c+MD%e2%80%8e" target="_blank">Fairhaven United Methodist Ch. - 12801 Darnestown Rd.</a></li></ul><br/><br/><div class="formGroupHead">Braddock Heights</div><ul class="list"><li class="divider">12:00 N</li><li><strong>Red Door @ Noon</strong><br/>(C)(D)(d40)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=6909+Maryland+Avenue%2c+Frederick%2c+MD%e2%80%8e" target="_blank">Ch. of the Transfiguration - 6909 Maryland Ave.</a></li></ul><br/><br/><div class="formGroupHead">Clarksburg</div><ul class="list"><li class="divider">7:00PM</li><li><strong>Simply Sober</strong><br/>(O)(D)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=23419+Spire+St.%2c+clarksburg%2c+md" target="_blank">Clarksburg United Methodist Ch. 23419 Spire St.</a></li></ul><br/><br/><div class="formGroupHead">Sykesville</div><ul class="list"><li class="divider">8:30PM</li><li><strong>Sykesville Monday</strong><br/>(O)(D)(d9)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=7538+Main+Street%2c+Sykesville%2c+MD%e2%80%8e" target="_blank">St. Paul's Methodist Ch. 7538 Main St.</a></li></ul><br/><br/><div class="formGroupHead">Poolesville</div><ul class="list"><li class="divider">7:00PM</li><li><strong>The Seneca Group</strong><br/>(O)(ST)(H)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=18400+River+Rd.%2c+poolesville%2c+md" target="_blank">Kunzang Odsal Palyul Changchub Choling - 18400 River Rd.</a></li></ul><br/><br/><div class="formGroupHead">Monrovia</div><ul class="list"><li class="divider">7:30PM</li><li><strong>To Thine Own Self Be True</strong><br/>(O)(W)(H)(d41)<br/><a href="http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=3425+Green+Valley+Road%2c+Ijamsville%2c+MD%e2%80%8e+" target="_blank">Pleasant Grove United Methodist Ch. - 3425 Green Valley Rd.</a></li></ul><br/><br/>
-          
+                <div class="formGroupHead">
+                    Barnesville
+                </div>
 
-            <!-- End Monday Data -->
+                <ul class="list">
+                    <li class="divider">7:30PM</li>
+
+                    <li><strong>Barnesville</strong><br>
+                    (C)(D)<br>
+                    <a href=
+                    "http://maps.google.com/maps?hl=&q=17917+Barnesville+Road%2C+Barnesville%2C+MD%E2%80%8E&sourceid=navclient-ff&rlz=1B3GGLL_enUS381&ie=UTF-8"
+                    target="_blank">Barnesville Baptist Ch. - 17917 Barnesville
+                    Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Adamstown
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:30PM</li>
+
+                    <li><strong>Bottomless</strong><br>
+                    (C)(BB)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?hl=&q=5603+Mountville+Road%2C+Adamstown%2C+MD&sourceid=navclient-ff&rlz=1B3GGLL_enUS381&ie=UTF-8"
+                    target="_blank">Adamstown Community Ch. - 5603 Mountville
+                    Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Mt. Airy
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>By The Book</strong><br>
+                    (O)(BB)(H)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=1307+N.+Main+St.%2c+mt.+airy%2c+md"
+                    target="_blank">St. James Episcopal Ch. - 1307 N. Main
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Frederick
+                </div>
+
+                <ul class="list">
+                    <li class="divider">10:00AM</li>
+
+                    <li><strong>Happy Hour Spirituality</strong><br>
+                    (O)(D)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+
+                    <li class="divider">2:00PM</li>
+
+                    <li><strong>FMH BYOC</strong><br>
+                    (O)(D)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=400+West+7th+Street%2c+Frederick%2c+MD%e2%80%8e"
+                    target="_blank">Frederick Memorial Hospital - 400 West 7th
+                    St.</a></li>
+
+                    <li class="divider">5:00PM</li>
+
+                    <li><strong>Commuter Group</strong><br>
+                    (O)(D)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">6:00PM</li>
+
+                    <li><strong>The Next Episode</strong><br>
+                    (O)(GV)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Downtown Step Group</strong><br>
+                    (O)(D)(ST)(*)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=116+East+2nd+St.%2c+Frederick%2c+MD%e2%80%8e"
+                    target="_blank">St. John's Catholic Ch. - 116 East 2nd
+                    St.</a></li>
+
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Young, Dumb & Full of AA</strong><br>
+                    (O)(ST)(Y)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Boyds
+                </div>
+
+                <ul class="list">
+                    <li class="divider">9:30AM</li>
+
+                    <li><strong>Fireside</strong><br>
+                    (C)(H)(ST 3,11)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=19510+White+Ground+Road%2c+boyds%2c+md"
+                    target="_blank">The Old Negro School - 19510 White Ground
+                    Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Germantown
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00AM</li>
+
+                    <li><strong>Germantown Yacht Club</strong><br>
+                    (C)(ABSI)(H)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=18301+Waring+Station+Road+Germantown%2c+MD+20874-2514"
+                    target="_blank">Izaak Walton League - 18301 Waring Station
+                    Rd.</a></li>
+
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>How It Works</strong><br>
+                    (O)(D)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=13421+Clopper+Road%2c+germantown%2c+md"
+                    target="_blank">United Ch. of Christ - 13421 Clopper
+                    Road</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Braddock Heights
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Primary Purpose</strong><br>
+                    (O)(ST)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=6909+Maryland+Avenue%2c+Frederick%2c+MD%e2%80%8e"
+                    target="_blank">Ch. of the Transfiguration - 6909 Maryland
+                    Ave.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Winfield
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>South Carroll Sunday Night</strong><br>
+                    (O)(BB)(D)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=0h&oq=&rlz=1T4GGLL_enUS347US348&q=2015+Old+Liberty+Road+West%2c+Westminster%2c+MD%e2%80%8e"
+                    target="_blank">Christ Care Ch. - 2015 Old Liberty Rd.
+                    West</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Thurmont
+                </div>
+
+                <ul class="list">
+                    <li class="divider">10:00AM</li>
+
+                    <li><strong>Sunday Morning Special</strong><br>
+                    (C)(ST)(d43)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=15601+US+15+North%2c+thurmont%2c+maryland"
+                    target="_blank">7th Day Adventist Ch. - 15601 US 15
+                    North</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Sykesville
+                </div>
+
+                <ul class="list">
+                    <li class="divider">10:00AM</li>
+
+                    <li><strong>Sykesville Sunday Morning</strong><br>
+                    (O)(D)(d9)<br>
+                    Springfield Hospital - Big "G" Building on 4th Street</li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Damascus
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Uptown-Downtown</strong><br>
+                    (O)(ST)(d41)<br>
+                    <a href=
+                    "https://maps.google.com/maps?q=9600+Main+St,+Damascus,+MD+20872&hl=en&sll=39.359983,-77.30908&sspn=0.549479,0.407867&hnear=9600+Main+St,+Damascus,+Maryland+20872&t=m&z=17"
+                    target="_blank">Damascus UMC Youth Chapel - 9600 Main
+                    St</a></li>
+                </ul><br>
+                <br>
+                <!-- End Sunday Data -->
+            </div>
+
+            <div class="panel" data-footer="none" id="monday" title="Monday">
+                <header>
+                    <a class='menuButton' id="menubadge" onclick=
+                    '$.ui.toggleSideMenu()' style="float:left !important"></a>
+
+                    <h1>Monday</h1>
+                </header><!-- Monday Data -->
+
+                <div class="formGroupHead">
+                    Point Of Rocks
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Blue Light Special</strong><br>
+                    (O)(D)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=1519+Ballenger+Creek+Pike%2c+Point+of+Rocks%2c+MD%e2%80%8e"
+                    target="_blank">St. Lukes Lutheran Ch. - 1519 Ballenger
+                    Creek Pike</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Brunswick
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Brunswick Group</strong><br>
+                    (C)(BB)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=7+South+Maryland+Avenue%2c+Brunswick%2c+MD%e2%80%8e+"
+                    target="_blank">New Hope United Methodist Ch. - 7 South
+                    Maryland Ave.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Cedar Grove
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Cedar Grove Group</strong><br>
+                    (C)(D)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=23401+Davis+Mill+Road"
+                    target="_blank">Upper Seneca Baptist Ch. - 23401 Davis Mill
+                    Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Frederick
+                </div>
+
+                <ul class="list">
+                    <li class="divider">10:00AM</li>
+
+                    <li><strong>Monday Morning Meeting</strong><br>
+                    (C)(ST)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=511+W+South+St,+Frederick,+MD&aq=0&oq=511+w+south+st+fr&sll=39.377834,-77.003174&sspn=0.720769,1.454315&vpsrc=0&ie=UTF8&hq=&hnear=511+W+South+St,+Frederick,+Maryland+21701&t=m&z=16&iwloc=A&ved=0CA8QpQY&sa=X&ei=w4KVUO-6Nc6OxQGNoYHgBA"
+                    target="_blank">511 W South St.</a></li>
+
+                    <li class="divider">10:00AM</li>
+
+                    <li><strong>Mid-Morning Group of A.A.</strong><br>
+                    (C)(ST)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>High Noon Group</strong><br>
+                    (C)(D)(H)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">5:15PM</li>
+
+                    <li><strong>Commuter Group</strong><br>
+                    (C)(BB)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">5:30PM</li>
+
+                    <li><strong>Happy Hour</strong><br>
+                    (O)(GV)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+
+                    <li class="divider">6:30PM</li>
+
+                    <li><strong>Living the Dream</strong><br>
+                    (O)(ST 1,2,3)(d41)<br>
+                    <a href=
+                    "https://maps.google.com/maps?q=Trinity+Chapel+of+the+Evangelical+Reformed+Church,+Frederick,+MD&hl=en&sll=39.371215,-77.217751&sspn=0.012341,0.026157&oq=Trinity+Cha&gl=US&hq=Trinity+Chapel+of+the+Evangelical+Reformed+Church,&hnear=Frederick,+Maryland&t=m&z=16"
+                    target="_blank">Trinity Chapel - 10 W Church St.</a></li>
+
+                    <li class="divider">6:45AM</li>
+
+                    <li><strong>Early Bird Group</strong><br>
+                    (C)(ST)(H)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Monday Night Crossroads Gr</strong><br>
+                    (C)(BG)(H)(S)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=511+W+South+St,+Frederick,+MD&aq=0&oq=511+w+south+st+fr&sll=39.377834,-77.003174&sspn=0.720769,1.454315&vpsrc=0&ie=UTF8&hq=&hnear=511+W+South+St,+Frederick,+Maryland+21701&t=m&z=16&iwloc=A&ved=0CA8QpQY&sa=X&ei=w4KVUO-6Nc6OxQGNoYHgBA"
+                    target="_blank">511 W South St.</a></li>
+
+                    <li class="divider">7:30PM</li>
+
+                    <li><strong>There Is a Solution</strong><br>
+                    (C)(BB)(M)(H)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Rosemont Speakers Group</strong><br>
+                    (O)(S)(H)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=2100+Rosemont+Ave.%2c+frederick%2c+md"
+                    target="_blank">Grace Community Ch. - 2100 Rosemont
+                    Ave.</a></li>
+
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Frederick Sober Women's Gr</strong><br>
+                    (C)(D)(W)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=131+W.+2nd.+St.%2c+frederick%2c+md"
+                    target="_blank">Calvary United Methodist - 131 West 2nd.
+                    St. (Education Bldg. - Rear, downstairs)</a></li>
+
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Monday Night Open Discussi</strong><br>
+                    (O)(D)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Eldersburg
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>Eldersburg Group</strong><br>
+                    (O)(D)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=12801+Darnestown+Road%2c+Gaithersburg%2c+MD%e2%80%8e"
+                    target="_blank">St. Joseph Catholic Community Ch. - 915
+                    Liberty Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Damascus
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Serenity at Seven</strong><br>
+                    (O)(ST)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=11210+Bethesda+Church+Rd.%2c+Damascus%2c+Md"
+                    target="_blank">Difference Makers Ch. - 11210 Bethesda
+                    Church Rd.</a></li>
+
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Fifth Chapter Group</strong><br>
+                    (C)(ST)(H)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=27015+Ridge+Road%2c+Damascus%2c+MD%e2%80%8e+"
+                    target="_blank">Redeemer Lutheran Ch. - 27015 Ridge
+                    Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Emmitsburg
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00 PM</li>
+
+                    <li><strong>Grotto Meeting</strong><br>
+                    (O)(ST)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=16150+Saint+Anthony+Road%2c+Emmitsburg%2c+MD%e2%80%8e"
+                    target="_blank">St Anthony's Shrine Parish (Parish House),
+                    16150 St. Anthony Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Myersville
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Keep It Simple</strong><br>
+                    (C)(ST) (Last Mond<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=603+Main+Street%2c+Myersville%2c+MD%e2%80%8e"
+                    target="_blank">Zion Methodist Ch. - 603 Main St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Mt. Airy
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Sober Friends</strong><br>
+                    (O)(ST)(d41)<br>
+                    <a href=
+                    "https://maps.google.com/maps?q=Damascus+Road+Community+Church&hl=en&ll=39.371215,-77.217751&spn=0.012341,0.026157&cid=4837219263630904350&gl=US&hq=Damascus+Road+Community+Church&t=m&z=16&iwloc=A"
+                    target="_blank">Damascus Road Community Ch. - 12826 Old
+                    National Pike</a></li>
+
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Let Go-Let God</strong><br>
+                    (O)(D)(H)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=1125+Saint+Michaels+Road%2c+Mt+Airy%2c+MD%e2%80%8e"
+                    target="_blank">St. Michael's Ch. - 1125 Saint Michaels
+                    Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Westminster
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>Monday Noon Group</strong><br>
+                    (O)(D)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=23+North+Court+Street%2c+Westminster%2c+MD%e2%80%8e"
+                    target="_blank">Ascension Episcopal Ch. - 23 North Court
+                    St.</a></li>
+
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Westminster Monday Night S</strong><br>
+                    (C)(ST)(H)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=21+Carroll+St.%2c+Westminster%2c+MD%e2%80%8e"
+                    target="_blank">Grace Evangelical Lutheran Ch. - 21 Carroll
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    New Windsor
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>New Windsor Monday Night</strong><br>
+                    (C)(BB(D)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=2h&oq=new%20windsor%20presbyterian%20church&rlz=1T4GGLL_enUS347US348&q=high+and+church+st.%2c+new+windsor%2c+md"
+                    target="_blank">New Windsor Presbyterian Ch. - High and
+                    Church St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Darnestown
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Quince Orchard Step</strong><br>
+                    (C)(ST)(D)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=12801+Darnestown+Road%2c+Gaithersburg%2c+MD%e2%80%8e"
+                    target="_blank">Fairhaven United Methodist Ch. - 12801
+                    Darnestown Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Braddock Heights
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>Red Door @ Noon</strong><br>
+                    (C)(D)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=6909+Maryland+Avenue%2c+Frederick%2c+MD%e2%80%8e"
+                    target="_blank">Ch. of the Transfiguration - 6909 Maryland
+                    Ave.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Clarksburg
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Simply Sober</strong><br>
+                    (O)(D)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=23419+Spire+St.%2c+clarksburg%2c+md"
+                    target="_blank">Clarksburg United Methodist Ch. 23419 Spire
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Sykesville
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Sykesville Monday</strong><br>
+                    (O)(D)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=7538+Main+Street%2c+Sykesville%2c+MD%e2%80%8e"
+                    target="_blank">St. Paul's Methodist Ch. 7538 Main
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Poolesville
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>The Seneca Group</strong><br>
+                    (O)(ST)(H)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=18400+River+Rd.%2c+poolesville%2c+md"
+                    target="_blank">Kunzang Odsal Palyul Changchub Choling -
+                    18400 River Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Monrovia
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:30PM</li>
+
+                    <li><strong>To Thine Own Self Be True</strong><br>
+                    (O)(W)(H)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=3425+Green+Valley+Road%2c+Ijamsville%2c+MD%e2%80%8e+"
+                    target="_blank">Pleasant Grove United Methodist Ch. - 3425
+                    Green Valley Rd.</a></li>
+                </ul><br>
+                <br>
+                <!-- End Monday Data -->
+            </div>
+
+            <div class="panel" data-footer="none" id="tuesday" title="Tuesday">
+                <header>
+                    <a class='menuButton' id="menubadge" onclick=
+                    '$.ui.toggleSideMenu()' style="float:left !important"></a>
+
+                    <h1>Tuesday</h1>
+                </header><!-- Tuesday -->
+
+                <div class="formGroupHead">
+                    Frederick
+                </div>
+
+                <ul class="list">
+                    <li class="divider">10:00AM</li>
+
+                    <li><strong>We Are Not Saints</strong><br>
+                    (O)(BB)(d40)<br>
+                    <a href=
+                    "https://maps.google.com/maps?q=106+W+Church+St,+Frederick,+MD&hl=en&ll=39.415549,-77.412538&spn=0.001629,0.00284&sll=38.804821,-77.236967&sspn=3.364461,5.817261&oq=106+w+church+st+&hnear=106+W+Church+St,+Frederick,+Maryland+21701&t=m&z=19"
+                    target="_blank">All Saints Episcopal Ch., 106 West Church
+                    Street, Frederick, MD</a></li>
+
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>High Noon Group</strong><br>
+                    (C)(GV)(H)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">5:15PM</li>
+
+                    <li><strong>Commuter Group</strong><br>
+                    (C)(ABSI)(LS)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">5:30PM</li>
+
+                    <li><strong>Happy Hour</strong><br>
+                    (O)(BB)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+
+                    <li class="divider">6:45AM</li>
+
+                    <li><strong>Early Bird Group</strong><br>
+                    (C)(GV)(H)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>164 Group</strong><br>
+                    (C)(BB)(d40)<br>
+                    <a href=
+                    "https://maps.google.com/maps?q=106+W+Church+St,+Frederick,+MD&hl=en&ll=39.415549,-77.412538&spn=0.001629,0.00284&sll=38.804821,-77.236967&sspn=3.364461,5.817261&oq=106+w+church+st+&hnear=106+W+Church+St,+Frederick,+Maryland+21701&t=m&z=19"
+                    target="_blank">All Saints Episcopal Ch., 106 West Church
+                    Street, Frederick, MD</a></li>
+
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Original Frederick Group</strong><br>
+                    (C)(D)(ST 1,2,3)(H<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=705+W.+Patrick+St.%2c+Frederick%2c+MD%e2%80%8e"
+                    target="_blank">Trinity United Methodist Ch. - 705 W.
+                    Patrick St. (Enter on Kline Ave.)</a></li>
+
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>AA After Dark</strong><br>
+                    (O)(ST 1,2,3)(LS -<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Thurmont
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Catoctin Furnace Group</strong><br>
+                    (O)(D)(d43)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=12625+Catoctin+Furnace+Road%2c+Thurmont%2c+MD%e2%80%8e"
+                    target="_blank">Harriet Chapel - 12625 Catoctin Furnace Rd.
+                    (Rt. 806)</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Damascus
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Crossroads Group</strong><br>
+                    (O)(D)(H)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=9240+Damascus+Road%2c+Damascus%2c+MD%e2%80%8e"
+                    target="_blank">St. Paul's Catholic Ch. - 9240 Damascus Rd.
+                    (Rt. 108)</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Glenwood
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Glenwood Big Book</strong><br>
+                    (O)(BB)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=St.+Andrew%27s+Episcopal+Ch.+2892+Route.+97%2c+Glenwood%2c+MD+21738+"
+                    target="_blank">St. Andrews Episcopal Ch. 2892 Rt.
+                    97</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Hampstead
+                </div>
+
+                <ul class="list">
+                    <li class="divider">6:30PM</li>
+
+                    <li><strong>Hampstead Tuesday Step Gro</strong><br>
+                    (O)(ST)(TRD)(H)(d9<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=St+Mark%27s+Lutheran+Ch.+-+1375+Main+St.%2c+Hampstead%2c+MD"
+                    target="_blank">St Marks Lutheran Ch. - 1375 Main
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Jefferson
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Jefferson Group</strong><br>
+                    (O)(D)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=3837+Jefferson+Pike%2c+Jefferson%2c+MD%e2%80%8e"
+                    target="_blank">Jefferson United Ch. of Christ - 3837
+                    Jefferson Pike</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Darnestown
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>More Peace of Mind</strong><br>
+                    (O)(D)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=15120+Turkey+Foot+Rd.%2c+Darnestown%2c+MD%e2%80%8e"
+                    target="_blank">Darnestown Presbyterian Ch. - 15120 Turkey
+                    Foot Rd. (At Route 28)</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Poolesville
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>New Beginners Group</strong><br>
+                    (C)(ST)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=17800+Elgin+Road%2c+Poolesville%2c+MD%e2%80%8e"
+                    target="_blank">Poolesville Presbyterian Ch. - 17800 Elgin
+                    Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Germantown
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Step Forward</strong><br>
+                    (C)(ST)(H)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=Neelsville+Presbyterian+Church"
+                    target="_blank">Neelsville Presbyterian Ch. - Rts. 355 &
+                    118</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Taneytown
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:30PM</li>
+
+                    <li><strong>Taneytown Tuesday Group</strong><br>
+                    (O)(D)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=49+W.+Baltimore+St.%2c+Taneytown%2c+MD"
+                    target="_blank">Grace United Ch. Of Christ - 49 W.
+                    Baltimore St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Walkersville
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:30PM</li>
+
+                    <li><strong>The Walkersville Group</strong><br>
+                    (C)(BB)(D)(d43)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=207+Braeburn+Dr.%2c+Walkersville%2c+MD"
+                    target="_blank">Walkersville Community Ch. - 207 Braeburn
+                    Dr.</a></li>
+                </ul><br>
+                <br>
+                <!-- END Tuesday -->
+            </div>
+
+            <div class="panel" data-footer="none" id="wednesday" title=
+            "Wednesday">
+                <header>
+                    <a class='menuButton' id="menubadge" onclick=
+                    '$.ui.toggleSideMenu()' style="float:left !important"></a>
+
+                    <h1>Wednesday</h1>
+                </header><!-- Wednesday -->
+
+                <div class="formGroupHead">
+                    Thurmont
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>A New Way Of Life</strong><br>
+                    (O)(D)(d43)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=14+North+Altamont+Avenue%2c+Thurmont%2c+MD%e2%80%8e"
+                    target="_blank">Thurmont Ch. of The Brethren - 14 North
+                    Altamont Ave.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    New Market
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00PM</li>
+
+                    <li><strong>As Bill Sees It</strong><br>
+                    (O)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=New+Market+United+Methodist+Church%2c+New+Market%2c+Maryland"
+                    target="_blank">New Market United Methodist Ch. - Rt. 874 &
+                    North Alley</a></li>
+
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Antique's Group</strong><br>
+                    (C)(ST)(1st Wed.-<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=New+Market+United+Methodist+Church%2c+New+Market%2c+Maryland"
+                    target="_blank">New Market United Methodist Ch. - Rt. 874 &
+                    North Alley</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Sykesville
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00 PM</li>
+
+                    <li><strong>Beginner Meeting</strong><br>
+                    (O)(T)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=6655+Sykesville+Road%2c+Sykesville%2c+MD%e2%80%8e"
+                    target="_blank">The Shoemaker House</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Frederick
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>High Noon Group</strong><br>
+                    (C)(ST)(H)(*)(TRD<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">5:15PM</li>
+
+                    <li><strong>Commuter Group</strong><br>
+                    (C)(D)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">5:30PM</li>
+
+                    <li><strong>Happy Hour</strong><br>
+                    (O)(S)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+
+                    <li class="divider">6:30PM</li>
+
+                    <li><strong>Living Sober</strong><br>
+                    (O)(BK)(ST - 1st W<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=10+west+church+st.%2c+frederick%2c+md"
+                    target="_blank">Old Trinity Chapel - 10 W. Church
+                    St.</a></li>
+
+                    <li class="divider">6:45AM</li>
+
+                    <li><strong>Early Bird Group</strong><br>
+                    (C)(BB)(H)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Legacy Step Group</strong><br>
+                    (C)(ST)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=1415+W.+7th+St.+Frederick%2c+MD"
+                    target="_blank">Good Shepherd Lutheran Ch. - 1415 W. 7th
+                    St.</a></li>
+
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>We Don't Drink On Wednesda</strong><br>
+                    (O)(D)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Brunswick
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Double-Dippers</strong><br>
+                    (O)(ST/TRD)(d40)<br>
+                    <a href=
+                    "https://maps.google.com/maps?q=Grace+Episcopal+Church,+Brunswick,+MD&hl=en&ll=39.313814,-77.624502&spn=0.024703,0.052314&sll=39.370933,-77.181787&sspn=0.051489,0.104628&hq=Grace+Episcopal+Church,+Brunswick,+MD&t=m&z=15&iwloc=A"
+                    target="_blank">Grace Episcopal Ch. - 114 E A St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Eldersburg
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>Eldersburg Group</strong><br>
+                    (O)(D)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=915+Liberty+Road+Eldersburg%2c+MD+21784"
+                    target="_blank">St. Joseph's Catholic Ch. - 915 Liberty Rd.
+                    (Rt. 26)</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Mt Airy
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Main Street Group</strong><br>
+                    (O)(D)(H)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=403+South+Main+Street%2c+Mt+Airy%2c+MD%e2%80%8e"
+                    target="_blank">Calvary United Methodist Ch. - 403 S. Main
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Emmitsburg
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Mason Dixon Group</strong><br>
+                    (O)(BB)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=100+W.+North+Ave.%2c+Emmitsburg%2c+MD"
+                    target="_blank">Elias Evangelical Lutheran Ch. - 100 W.
+                    North Ave.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    New Windsor
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:30PM</li>
+
+                    <li><strong>New Windsor Wednesday Nigh</strong><br>
+                    (O)(D)(*)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=200+Main+Street%2c+New+Windsor%2c+MD%e2%80%8e"
+                    target="_blank">St. Paul's United Methodist Ch. - 200 Main
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Braddock Heights
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>Red Door @ Noon</strong><br>
+                    (C)(ABSI)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=6909+Maryland+Avenue%2c+Frederick%2c+MD%e2%80%8e"
+                    target="_blank">Church of the Transfiguration - 6909
+                    Maryland Ave.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Walkersville
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Walkersville 12 and 12</strong><br>
+                    (O)(ST)(d43)<br>
+                    <a href=
+                    "http://maps.google.com/maps?rlz=1T4GGLL_enUS347US348&q=22+Main+st.+walkersville,+MD&um=1&ie=UTF-8&hq=&hnear=22+Main+St,+Walkersville,+MD+21793&gl=us&ei=J94ATcG8K4S8lQe0t-XoCA&sa=X&oi=geocode_result&ct=title&resnum=1&ved=0CBcQ8gEwAA"
+                    target="_blank">Walkersville United Methodist Ch. - 22 Main
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Westminster
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>Wednesday Noon Group</strong><br>
+                    (O)(D)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=23+North+Court+Street%2c+Westminster%2c+MD"
+                    target="_blank">Ascension Episcopal Ch. - 23 North Court
+                    St.</a></li>
+                </ul><br>
+                <br>
+                <!-- Wednesday -->
+            </div>
+
+            <div class="panel" data-footer="none" id="thursday" title=
+            "Thursday">
+                <header>
+                    <a class='menuButton' id="menubadge" onclick=
+                    '$.ui.toggleSideMenu()' style="float:left !important"></a>
+
+                    <h1>Thursday</h1>
+                </header><!-- Thursday -->
+
+                <div class="formGroupHead">
+                    Darnestown
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>A Darne Good Big Book Meet</strong><br>
+                    (O)(BB)(D)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=15120+Turkey+Foot+Rd.%2c+Darnestown%2c+MD%e2%80%8e"
+                    target="_blank">Darnestown United Presbytarian Ch. - 15120
+                    Turkey Foot Rd</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Frederick
+                </div>
+
+                <ul class="list">
+                    <li class="divider">10:00AM</li>
+
+                    <li><strong>Doing What's Proven</strong><br>
+                    (C)(ST)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=511+W+South+St,+Frederick,+MD&aq=0&oq=511+w+south+st+fr&sll=39.377834,-77.003174&sspn=0.720769,1.454315&vpsrc=0&ie=UTF8&hq=&hnear=511+W+South+St,+Frederick,+Maryland+21701&t=m&z=16&iwloc=A&ved=0CA8QpQY&sa=X&ei=w4KVUO-6Nc6OxQGNoYHgBA"
+                    target="_blank">511 W South St.</a></li>
+
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>High Noon Group</strong><br>
+                    (C)(D)(H)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">5:15PM</li>
+
+                    <li><strong>Commuter Group</strong><br>
+                    (C)(GV)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">5:30PM</li>
+
+                    <li><strong>Happy Hour</strong><br>
+                    (O)(ABSI)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+
+                    <li class="divider">6:45AM</li>
+
+                    <li><strong>Early Bird Group</strong><br>
+                    (C)(D)(H)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Sisters in Sobriety</strong><br>
+                    (O)(D)(Y)(W)(Last<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Thursday Night Crossroads</strong><br>
+                    (C)(BG)(D)(H)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=511+W+South+St,+Frederick,+MD&aq=0&oq=511+w+south+st+fr&sll=39.377834,-77.003174&sspn=0.720769,1.454315&vpsrc=0&ie=UTF8&hq=&hnear=511+W+South+St,+Frederick,+Maryland+21701&t=m&z=16&iwloc=A&ved=0CA8QpQY&sa=X&ei=w4KVUO-6Nc6OxQGNoYHgBA"
+                    target="_blank">511 W South St.</a></li>
+
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Back Alley Group</strong><br>
+                    (O)(D)(Last Thursd<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS381US382&q=Frederick+Church+Of+Christ%2c+1305+North+Market+Street%2c+Frederick"
+                    target="_blank">Frederick Ch. of Christ - 1305 North Market
+                    St.</a></li>
+
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Open Season</strong><br>
+                    (O)(D)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Germantown
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Beginners Group</strong><br>
+                    (C)(ST)(H)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=20701+Frederick+Rd%2c+Germantown%2c+MD"
+                    target="_blank">Neelsville Presbyterian Ch. - 20701
+                    Frederick Rd.</a></li>
+
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Neelsville Group</strong><br>
+                    (C)(ST)(H)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=20701+Frederick+Rd%2c+Germantown%2c+MD"
+                    target="_blank">Neelsville Presbyterian Ch. - 20701
+                    Frederick Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Creagerstown
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Gateway Group</strong><br>
+                    (C)(ST)(Last Thurs<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=8619+Blacks+Mill+Rd.%2c+Creagerstown%2c+MD"
+                    target="_blank">St. John's Lutheran Ch. - 8619 Blacks Mill
+                    Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Mt. Airy
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Mt. Airy Woodville Beginne</strong><br>
+                    (O)(ST-1,2,3)(BG)(<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=5923+Woodville+Road%2c+Mount+Airy%2c+MD%e2%80%8e"
+                    target="_blank">Prospect United Methodist Ch. - 5923
+                    Woodville Rd.</a></li>
+
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Mt. Airy Woodville Group</strong><br>
+                    (C)(ST)(H)(*)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=5923+Woodville+Road%2c+Mount+Airy%2c+MD%e2%80%8e"
+                    target="_blank">Prospect United Methodist Ch. - 5923
+                    Woodville Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Urbana
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>One Step At A Time</strong><br>
+                    (O)(ST)(H)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=4548+Araby+Church+Rd%2c+Frederick%2c+MD+21704"
+                    target="_blank">Araby United Methodist Ch. - 4548 Araby
+                    Church Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Poolesville
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Pot Luck Group</strong><br>
+                    (C)(ST)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=20100+Fisher+Avenue%2c+Poolesville%2c+MD%e2%80%8e"
+                    target="_blank">St. Peter's Episcopal Ch. - 20100 Fisher
+                    Ave.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Braddock Heights
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>Red Door @ Noon</strong><br>
+                    (C)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=6909+Maryland+Avenue%2c+Frederick%2c+MD%e2%80%8e"
+                    target="_blank">Church of the Transfiguration - 6909
+                    Maryland Ave.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Finksburg
+                </div>
+
+                <ul class="list">
+                    <li class="divider">6:30PM</li>
+
+                    <li><strong>S.A.S.T.O.</strong><br>
+                    (O)(S)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=3006+Old+Westminster+Pike%2c+Finksburg%2c+MD%e2%80%8e"
+                    target="_blank">Mt. Zion United Methodist Ch. - 3006 Old
+                    Westminster Pike</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Walkersville
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Walkin thru the Books</strong><br>
+                    (O)(BK)(d43)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=207+Braeburn+Dr.%2c+Walkersville%2c+Maryland"
+                    target="_blank">Walkersville Community Ch. - 207 Braeburn
+                    Dr.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Westminster
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Westminster Big Book</strong><br>
+                    (O)(BB)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=23+North+Court+St.%2c+Westminster%2c+Maryland"
+                    target="_blank">Ascension Episcopal Church - 23 North Court
+                    St.</a></li>
+                </ul><br>
+                <br>
+                <!-- End Thursday -->
+            </div>
+
+            <div class="panel" data-footer="none" id="friday" title="Friday">
+                <header>
+                    <a class='menuButton' id="menubadge" onclick=
+                    '$.ui.toggleSideMenu()' style="float:left !important"></a>
+
+                    <h1>Friday</h1>
+                </header><!-- Friday -->
+
+                <div class="formGroupHead">
+                    Mount Airy
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>12 & 12 @ 12</strong><br>
+                    (O) (D)<br>
+                    <a href=
+                    "https://maps.google.com/maps?ie=UTF-8&q=17455+Old+Frederick+Rd+Mount+Airy+Maryland+21771"
+                    target="_blank">Mount Airy Presbyterian Church - 17455 Old
+                    Frederick Rd, Mt Airy, MD 21771</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Frederick
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>High Noon Group</strong><br>
+                    (O)(BB)(H)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">5:15PM</li>
+
+                    <li><strong>Commuter Group</strong><br>
+                    (C)(ST)(Last Frida<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">5:30PM</li>
+
+                    <li><strong>Happy Hour</strong><br>
+                    (O)(ST)(Last Frida<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+
+                    <li class="divider">6:45AM</li>
+
+                    <li><strong>Early Bird Group</strong><br>
+                    (O)(BB)(H)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>New Freedom Group</strong><br>
+                    (C)(D)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?hl=&q=9400+baltimore+rd%2C+frederick%2C+md&sourceid=navclient-ff&rlz=1B3GGGL_enUS272US306&ie=UTF-8"
+                    target="_blank">Grace Trinity United Ch. of Christ - Rt.
+                    144 3/4 mi. east of Jug Bridge</a></li>
+
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>AA After Dark</strong><br>
+                    (O)(D)(BB)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Damascus
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>As Bill Sees It Group</strong><br>
+                    (O)(ABSI)(T)(d41)<br>
+                    <a href=
+                    "https://maps.google.com/maps?q=9600+Main+St,+Damascus,+MD+20872&hl=en&sll=39.359983,-77.30908&sspn=0.549479,0.407867&hnear=9600+Main+St,+Damascus,+Maryland+20872&t=m&z=17"
+                    target="_blank">Damascus UMC Youth Chapel - 9600 Main
+                    St</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Thurmont
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Catoctin Furnace Group</strong><br>
+                    (O)(d43)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=12625+Catoctin+Furnace+Road%2c+Thurmont%2c+MD%e2%80%8e"
+                    target="_blank">Harriet Chapel - 12625 Catoctin Furnace
+                    Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Clarksburg
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Simply Sober</strong><br>
+                    (O)(D)(H)<br>
+                    <a href=
+                    "http://maps.google.com/maps?rlz=1T4GGLL_enUS347US348&q=23419+Spire+St.+,Clarksburg,+MD%E2%80%8E&um=1&ie=UTF-8&ei=lxAoTO34FYOglAef-NTKAw&sa=X&oi=mode_link&ct=mode&ved=0CAcQ_AU"
+                    target="_blank">Clarksburg United Methodist Ch. - 23419
+                    Spire St.</a></li>
+
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Clarksburg Group</strong><br>
+                    (O)(D)(*)<br>
+                    <a href=
+                    "http://maps.google.com/maps?rlz=1T4GGLL_enUS381US382&um=1&ie=UTF-8&q=Greenridge+Baptist+Church,+Clarksburg,+Maryland+20841&fb=1&gl=us&hq=Greenridge+Baptist+Church,&hnear=Clarksburg,+MD&cid=0,0,14445222727402243505&ei=0BkqTPb0O42inQf_q93VDg&sa=X&oi=local_result&ct=image&resnum=1&ved=0CBMQnwIwAA"
+                    target="_blank">Greenridge Baptist Ch. - 21925 Frederick
+                    Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Eldersburg
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>Eldersburg Group</strong><br>
+                    (O)(ST)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=915+Liberty+Road%2c+Eldersburg%2c+MD%e2%80%8e"
+                    target="_blank">St. Joseph's Catholic Ch. - 915 Liberty
+                    Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Westminster
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>Friday Noon Group</strong><br>
+                    (O)(D)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=23+North+Court+st.%2c+Westminster%2c+MD"
+                    target="_blank">Ascension Episcopal Ch. - 23 North Court
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Libertytown
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Liberty Group</strong><br>
+                    (O)(D)(First Frida<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=St.+Peter%27s+Roman+Catholic+Church%2c+Libertytown%2c+MD"
+                    target="_blank">St. Peter's Roman Catholic Ch. - 9190
+                    Church St. (Warm weather-Outside Pavilion)</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Manchester
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Manchester Friday Night</strong><br>
+                    (C)(D)(*)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=Immanual+Lutheran+Church%2c+Manchester%2c+Carroll%2c+Maryland+21102"
+                    target="_blank">Immanual Lutheran Ch. - 3184 Church
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Emmitsburg
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Mason Dixon Group</strong><br>
+                    (O)(D)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=Elias+Lutheran+Church%2c+emmitsburg%2c+md"
+                    target="_blank">Elias Lutheran Ch. - 100 W. North Ave (Next
+                    to Legion)</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Braddock Heights
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>Red Door @ Noon</strong><br>
+                    (C)(ST)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=6909+Maryland+Avenue%2c+Frederick%2c+MD%e2%80%8e"
+                    target="_blank">Church of the Transfiguration - 6909
+                    Maryland Ave.</a></li>
+
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Red Door Group</strong><br>
+                    (O)(D)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=6909+Maryland+Avenue%2c+Frederick%2c+MD%e2%80%8e"
+                    target="_blank">Church of the Transfiguration - 6909
+                    Maryland Ave.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Sykesville
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Sykesville Friday</strong><br>
+                    (O)(D)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=7538+Main+Street%2c+Sykesville%2c+MD%e2%80%8e"
+                    target="_blank">St. Paul's Methodist Ch. - 7538 Main
+                    St.</a></li>
+                </ul><br>
+                <br>
+                <!-- End Friday -->
+            </div>
+
+            <div class="panel" data-footer="none" id="saturday" title=
+            "Saturday">
+                <header>
+                    <a class='menuButton' id="menubadge" onclick=
+                    '$.ui.toggleSideMenu()' style="float:left !important"></a>
+
+                    <h1>Saturday</h1>
+                </header><!-- Saturday -->
+
+                <div class="formGroupHead">
+                    New Market
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Approaching Grace</strong><br>
+                    (O)(D)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=5740+Green+Valley+Rd.%2cNew+Market%2c+MD%e2%80%8e"
+                    target="_blank">Grace Episcopal Ch. - 5740 Green Valley
+                    Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Cedar Grove
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Bill's Friends</strong><br>
+                    (O)(D)(H)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=23401+Davis+Mill+Rd.%2c+MD"
+                    target="_blank">Upper Seneca Baptist Ch. - 23401 Davis Mill
+                    Rd</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Braddock Heights
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:30PM</li>
+
+                    <li><strong>Red Door Speakers Meeting</strong><br>
+                    (O)(S)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=6909+Maryland+Avenue%2c+Frederick%2c+MD%e2%80%8e"
+                    target="_blank">Church of the Transfiguration - 6909
+                    Maryland Ave.</a></li>
+
+                    <li class="divider">9:30AM</li>
+
+                    <li><strong>Braddock Maintenance Step</strong><br>
+                    (C)(ST 10,11,12)(d<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4EGLC_enUS272US281&q=6909+Maryland+Avenue%2c+Frederick%2c+MD%e2%80%8e"
+                    target="_blank">Church of the Transfiguration - 6909
+                    Maryland Ave.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Frederick
+                </div>
+
+                <ul class="list">
+                    <li class="divider">10:30PM</li>
+
+                    <li><strong>Saturday Night Live!</strong><br>
+                    (O)(D)(BB)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+
+                    <li class="divider">11:00AM</li>
+
+                    <li><strong>Revelations Group</strong><br>
+                    (O)(D)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=Centennial+Memorial+United+Church%2c+West+2nd+Street%2c+Frederick%2c+MD"
+                    target="_blank">Centennial United Methodist Ch. - 8 West
+                    2nd St.</a></li>
+
+                    <li class="divider">5:30PM</li>
+
+                    <li><strong>Happy Hour</strong><br>
+                    (O)(CTB)(LS)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+
+                    <li class="divider">6:00PM</li>
+
+                    <li><strong>The Golden Mile Group</strong><br>
+                    (O)(BB)(H)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=705+West+Patrick+St.%2c+Frederick%2c+md"
+                    target="_blank">Trinity United Methodist Ch. - 705 West
+                    Patrick St.</a></li>
+
+                    <li class="divider">6:45AM</li>
+
+                    <li><strong>Early Bird Group</strong><br>
+                    (O)(P)(H)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=115+West+Second+St%2c+frederick%2c+md"
+                    target="_blank">Frederick Presbyterian Ch. - 115 W. 2nd
+                    St.</a></li>
+
+                    <li class="divider">7:00PM</li>
+
+                    <li><strong>Saturday Night Mountain Gr</strong><br>
+                    (O)(T)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=0h&oq=&rlz=1T4GGLL_enUS347US348&q=9664+Opossumtown+Pike%2c+Frederick%2c+MD%e2%80%8e"
+                    target="_blank">Bethel Lutheran Ch. - 9664 Opossumtown
+                    Pike</a></li>
+
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Saturday Night Beginners</strong><br>
+                    (O)(T)(d41)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4EGLC_enUS272US281&q=400+A+East+Church+St.%2c+frederick%2c+md"
+                    target="_blank">The Club, Inc. - 400 A East Church
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Sykesville
+                </div>
+
+                <ul class="list">
+                    <li class="divider">12:00 N</li>
+
+                    <li><strong>Flohrville Big Book</strong><br>
+                    (O)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=6620+Church+Street%2c+Sykesville%2c+MD%e2%80%8e"
+                    target="_blank">Flohrville United Methodist Ch. - 6620
+                    Church St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Mt. Airy
+                </div>
+
+                <ul class="list">
+                    <li class="divider">7:30PM</li>
+
+                    <li><strong>Last Stop Group</strong><br>
+                    (C)(ST)(*)(H)(Last<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=0h&oq=&rlz=1T4GGLL_enUS347US348&q=28325+Kemptown+Road%2c+Damascus%2c+MD%e2%80%8e"
+                    target="_blank">Montgomery United Methodist Ch. - 28325
+                    Kemptown Rd.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Emmitsburg
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Mason Dixon Group</strong><br>
+                    (O)(S)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=Elias+Lutheran+Church%2c+emmitsburg%2c+md"
+                    target="_blank">Elias Lutheran Ch. - 100 W. North Ave (Next
+                    to Legion)</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Point Of Rocks
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Point Of Rocks Group</strong><br>
+                    (O)(ST)(d40)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=1519+Ballenger+Creek+Pike%2c+Point+of+Rocks%2c+MD"
+                    target="_blank">St. Lukeï¿½s Lutheran Ch. - 1519 Ballenger
+                    Creek Pike</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Westminster
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00PM</li>
+
+                    <li><strong>Saturday Night Live</strong><br>
+                    (O)(D)(d9)<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&aq=&oq=&rlz=1T4GGLL_enUS347US348&q=23+North+Court+Street%2c+Westminster%2c+MD%e2%80%8e"
+                    target="_blank">Ascension Episcopal Church - 23 North Court
+                    St.</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Ijamsville
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:00AM</li>
+
+                    <li><strong>Sunrise Group</strong><br>
+                    (O)(D)<br>
+                    <a href=
+                    "https://maps.google.com/maps?q=St+Ignatius+Roman+Catholic+Church&hl=en&ll=39.347009,-77.309203&spn=0.011798,0.023217&cid=16812326517658159790&gl=US&t=m&z=16&iwloc=A"
+                    target="_blank">St. Ignatius Roman Catholic Ch - 4103
+                    Prices Distillery Rd (Bldg C)</a></li>
+                </ul><br>
+                <br>
+
+                <div class="formGroupHead">
+                    Woodbine
+                </div>
+
+                <ul class="list">
+                    <li class="divider">8:30PM</li>
+
+                    <li><strong>Woodbine Group</strong><br>
+                    (O)(D) (Last Satur<br>
+                    <a href=
+                    "http://maps.google.com/maps?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enUS347US348&q=Morgan+Chapel%2c+woodbine%2c+md"
+                    target="_blank">Morgan Chapel United Methodist Ch. -
+                    Woodbine Rd. at Hoods Mill Rd.</a></li>
+                </ul><br>
+                <br>
+                <!-- End Saturday -->
+            </div>
+
+            <div class="panel" data-footer="none" id="about" title=
+            "About this App">
+                <header>
+                    <a class='menuButton' id="menubadge" onclick=
+                    '$.ui.toggleSideMenu()' style="float:left !important"></a>
+
+                    <h1>About this App</h1>
+                </header>
+
+                <p>This App is based on data available at the <a href=
+                "http://www.westcentralaa.org/Meetings.php">West Central AA</a>
+                website and was created by Adam W.</p>
+
+                <p>This app is 100% free of charge and Ad free.</p>
+
+                <p>If your Intergroup or Area needs a Free "When and Where" app
+                for Android/IOS/Windows please contact Adam W. @ <a href=
+                "mail:adam@socialzoom.co">adam@socialzoom.co</a>. Apps are 100%
+                Free and open source but you must have a volunteer who I can
+                train on how to update the app.</p>
+
+                <p><br>
+                <a class="button" href="tel:13016620544">Need Help? Call the
+                Hotline</a></p>
+            </div>
         </div>
-        
-        <div class="panel" title="Tuesday" id="tuesday" data-footer="none">
-            <header>
-                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Tuesday</h1>
-            </header>
-            <p>This is view for fourth menu item</p>
-        </div>
-    
-            <div class="panel" title="Wednesday" id="wednesday" data-footer="none">
-            <header>
-                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Wednesday</h1>
-            </header>
-            <p>This is view for fourth menu item</p>
-        </div>
-    
-            <div class="panel" title="Thursday" id="thursday" data-footer="none">
-            <header>
-                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Thursday</h1>
-            </header>
-            <p>This is view for fourth menu item</p>
-        </div>
-    
-            <div class="panel" title="Friday" id="friday" data-footer="none">
-            <header>
-                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Friday</h1>
-            </header>
-            <p>This is view for fourth menu item</p>
-        </div>
-    
-            <div class="panel" title="Saturday" id="saturday" data-footer="none">
-            <header>
-                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Saturday</h1>
-            </header>
-            <p>This is view for fourth menu item</p>
-        </div>
-        
     </div>
-</div>
 </body>
-</html>    
+</html>
