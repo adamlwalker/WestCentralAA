@@ -5,7 +5,7 @@
         xmlns:gap        = "http://phonegap.com/ns/1.0"
         id                        = "com.socialzoom.aafinder"
         versionCode        = "5"
-        version                = "1.4">
+        version                = "1.0">
 
     <name>West Central AA</name>
 
@@ -35,8 +35,8 @@
         <preference name="ios-statusbarstyle" value="black-opaque"/>
         <preference name="detect-data-types" value="true"/>
         <preference name="exit-on-suspend" value="false"/>
-        <preference name="show-splash-screen-spinner" value="false"/>
-        <preference name="SplashScreenDelay" value="1000000"/>
+        <preference name="show-splash-screen-spinner" value="true"/>
+        <preference name="SplashScreenDelay" value="5000" />
         <preference name="disable-cursor" value="false"/>
         <preference name="android-minSdkVersion" value="7"/>
         <preference name="android-installLocation" value="auto"/>
