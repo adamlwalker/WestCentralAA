@@ -165,9 +165,14 @@ body {
 	overflow-y:auto;
 	overflow-x:hidden;
 	-webkit-overflow-scrolling:touch;
-	-webkit-backface-visibility:visible;
+	-webkit-backface-visibility:hidden;
 	padding:10px;
 	padding-top:0px;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
 } /* This class is applied to the divs that contain the various "views" or pages of the app. */
 
 
