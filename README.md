@@ -7,7 +7,7 @@ The West Central AA Meeting Finder is an open source mobile application built us
 Learn how it was built at: 
 * coming soon
 
-The Fresh Food Finder uses:
+The West Central AA Meeting Finder uses:
 * PhoneGap: http://www.phonegap.com
 * Intel App Framework: http://app-framework-software.intel.com/
 * jQuery: http://jquery.com/
