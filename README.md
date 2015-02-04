@@ -15,6 +15,6 @@ The West Central AA Meeting Finder uses:
 All data obtained from:
 * http://www.westcentralaa.org/Meetings.php
 
-The Fresh Food Finder is available in the following markets:
+The West Central AA Meeting Finder is available in the following markets:
 * iTunes: coming soon
 * Google Play: coming soon
